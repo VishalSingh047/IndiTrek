@@ -1,11 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/img/logo.png"; // adjust path if different
 
 const Navbar = () => {
   return (
     <nav className="bg-blue-600 text-white shadow-md p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-xl font-bold">IndiTrekk</div>
+        <div className="flex items-center space-x-2">
+          <img src={logo} alt="IndiTrek Logo" className="f-h-18 w-8 object-contain" />
+          <span className="text-xl font-bold">IndiTrek</span>
+        </div>
         <ul className="flex space-x-6 text-base">
           <li>
             <Link to="/" className="hover:text-gray-300 transition">
