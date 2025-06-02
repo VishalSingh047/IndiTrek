@@ -1,30 +1,35 @@
 import React from "react";
+import HimalayanRange from "../../assets/img/HimalayanRange.jpg"
+import RajasthanFort from "../../assets/img/RajasthanFort.jpg"
+import GoaBeach from "../../assets/img/GoaBeach.jpg"
+import KeralaWaters from "../../assets/img/KeralaWaters.jpg"
+import NorthEast from "../../assets/img/NorthEast.jpg"
 
 const tourPackages = [
   {
     title: 'Himalayan Adventure',
     description: 'Explore the majestic Himalayan ranges with guided treks and camping.',
-    image: 'https://via.placeholder.com/300x200?text=Himalayas',
+    image: HimalayanRange,
   },
   {
     title: 'Rajasthan Heritage Tour',
     description: 'Visit historic forts, palaces, and colorful bazaars of Rajasthan.',
-    image: 'https://via.placeholder.com/300x200?text=Rajasthan',
+    image: RajasthanFort,
   },
   {
     title: 'Goa Beach Escape',
     description: 'Relax on sunny beaches, enjoy water sports, and explore nightlife in Goa.',
-    image: 'https://via.placeholder.com/300x200?text=Goa',
+    image: GoaBeach,
   },
   {
     title: 'Kerala Backwaters',
     description: 'Cruise through the scenic backwaters of Kerala in a houseboat.',
-    image: 'https://via.placeholder.com/300x200?text=Kerala',
+    image: KeralaWaters,
   },
   {
     title: 'Northeast India Discovery',
     description: 'Discover the unexplored beauty of India’s northeast with unique cultures and landscapes.',
-    image: 'https://via.placeholder.com/300x200?text=Northeast+India',
+    image: NorthEast,
   },
 ];
 
