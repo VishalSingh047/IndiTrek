@@ -8,10 +8,9 @@ const TravelSection = () => {
       style={{
   backgroundImage: `url(${Img})`
 }}
-
     >
-      <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-        <div className="text-center px-6 md:px-20">
+      <div className="absolute inset-0 bg-opacity-50 flex items-center justify-center">
+        <div className="px-6 md:px-20">
           <h1 className="text-4xl md:text-6xl font-bold tracking-wide">
             <span className="border-l-4 border-yellow-400 pl-3">TRAVEL</span>
           </h1>
