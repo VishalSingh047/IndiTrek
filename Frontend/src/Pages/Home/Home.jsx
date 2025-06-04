@@ -4,11 +4,16 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 function Home () {
+    const fadeIn = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
+
 return<>
 <TravelSection />
 
       {/* CTA Button */}
-      <motion.section className="py-12 text-center" initial="hidden" whileInView="visible" viewport={{ once: true }} >
+      <motion.section className="py-12 text-center" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} >
         <h4 className="text-2xl font-semibold mb-4">Ready to start your adventure?</h4>
         <Link
           to="/enquiry"
