@@ -5,7 +5,7 @@ import logo from "../assets/img/logo.png";
 const Navbar = () => {
   return (
     <nav className="fixed top-0 z-40 w-full bg-blue-600 text-white shadow-md p-4">
-      <div className=" container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="flex items-center space-x-2">
         <img src={logo} alt="IndiTrek Logo" className="h-8 w-8" />
         <span className="text-xl font-bold">IndiTrek</span>

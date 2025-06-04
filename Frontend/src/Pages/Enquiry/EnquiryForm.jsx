@@ -26,7 +26,9 @@ const EnquiryForm = () => {
   };
 
   return (
-    <div className="max-w-xl mx-auto mt-10 p-6 bg-white shadow-lg rounded-xl">
+  <>
+  <div className="bg-gray-50 pt-15 pb-10">
+    <div className="max-w-xl mx-auto mt-10 p-6 bg-gray-100 shadow-lg rounded-xl">
       <h2 className="text-2xl font-semibold mb-6 text-center text-blue-600">
         Enquiry Form
       </h2>
@@ -87,6 +89,8 @@ const EnquiryForm = () => {
         </button>
       </form>
     </div>
+  </div>
+  </>
   );
 };
 
