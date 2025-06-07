@@ -30,7 +30,7 @@ const fadeIn = {
 
 const AboutPage = () => {
   return (
-    <div className="bg-white text-gray-800">
+    <div className="bg-white text-gray-800 pt-[1.5rem]">
       {/* About Section */}
       <motion.section
         className="py-16 px-6 md:px-20"

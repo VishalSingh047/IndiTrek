@@ -4,6 +4,8 @@ import RajasthanFort from "../../assets/img/RajasthanFort.jpg"
 import GoaBeach from "../../assets/img/GoaBeach.jpg"
 import KeralaWaters from "../../assets/img/KeralaWaters.jpg"
 import NorthEast from "../../assets/img/NorthEast.jpg"
+import { motion } from 'framer-motion';
+import { Link } from "react-router-dom";
 
 const tourPackages = [
   {
@@ -33,9 +35,22 @@ const tourPackages = [
   },
 ];
 
+const fadeIn = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
+
+
 const Services = () => {
-  return (
-    <div className="p-8">
+  return <>
+    <div className="p-8 pt-[1.5rem]">
+      <motion.section
+        className="py-16 px-6 md:px-20"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeIn}
+      >
       <h1 className="text-4xl font-bold mb-8 text-center">Our Tour Packages</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {tourPackages.map((pkg, index) => (
@@ -48,8 +63,21 @@ const Services = () => {
           </div>
         ))}
       </div>
+
+      </motion.section>
     </div>
-  );
+    
+    {/* CTA Button */}
+      <motion.section className="py-12 text-center" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} >
+        <h4 className="text-2xl font-semibold mb-4">Ready to start your adventure?</h4>
+        <Link
+          to="/enquiry"
+          className="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl font-medium hover:bg-blue-700 transition"
+        >
+          Book Your Journey
+        </Link>
+      </motion.section>
+  </>
 };
 
 export default Services;
