@@ -129,9 +129,11 @@ return<>
       </div>
 
       {/* Ultimate Travel Packages for India */}
-      <h2 className="text-2xl font-bold mb-6">
-        Ultimate Travel Packages for India
-      </h2>
+      
+      <h1 className="text-center text-[#1d2a3b] text-2xl lg:text-4xl font-sans font-medium py-6">
+          Ultimate Travel Packages for India
+        </h1>
+      <div className="max-w-[1280px] md:p-5 mx-auto px-4 sm:px-6">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {tourData.map((tour, index) => (
           <Card key={index} className="shadow-md overflow-hidden">
@@ -167,6 +169,7 @@ return<>
             </CardContent>
           </Card>
         ))}
+      </div>
       </div>
 
       {/* CTA Button */}
