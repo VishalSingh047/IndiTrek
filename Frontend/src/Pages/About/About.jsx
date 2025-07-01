@@ -40,9 +40,9 @@ const AboutPage = () => {
         variants={fadeIn}
       >
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6 text-blue-700">About IndiTrek</h2>
+          <h2 className="text-2xl lg:text-4xl font-bold mb-6 text-green-950">About IndiTrek</h2>
           <p className="text-lg leading-relaxed">
-            At <strong>IndiTrek</strong>, we believe travel is more than destinations—it's about discovering culture, people, and stories.
+            At <strong className='text-green-950'>IndiTrek</strong>, we believe travel is more than destinations—it's about discovering culture, people, and stories.
           </p>
           <p className="text-lg leading-relaxed mt-4">
             Our local experts ensure each tour is safe, personalized, and unforgettable. Whether you're a solo traveler or a family,
@@ -82,7 +82,7 @@ const AboutPage = () => {
         variants={fadeIn}
       >
         <div className="max-w-6xl mx-auto text-center">
-          <h3 className="text-2xl font-semibold mb-4">Explore All Corners of India</h3>
+          <h3 className="text-2xl lg:text-4xl text-green-950 font-semibold mb-4">Explore All Corners of India</h3>
           <p className="mb-6 text-gray-600">
             From the Himalayas in the north to the beaches of the south, IndiTrek connects you with India’s full spectrum of beauty.
           </p>
@@ -99,7 +99,7 @@ const AboutPage = () => {
         variants={fadeIn}
       >
         <div className="max-w-5xl mx-auto text-center">
-          <h3 className="text-3xl font-bold mb-10 text-blue-700">What Our Travelers Say</h3>
+          <h3 className="text-2xl lg:text-4xl font-bold mb-10 text-green-950">What Our Travelers Say</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {testimonials.map((t, index) => (
               <motion.div
@@ -109,7 +109,7 @@ const AboutPage = () => {
                 transition={{ duration: 0.3 }}
               >
                 <p className="text-gray-700 italic">“{t.text}”</p>
-                <div className="mt-4 font-semibold text-blue-600">– {t.name}</div>
+                <div className="mt-4 font-semibold text-green-950">– {t.name}</div>
               </motion.div>
             ))}
           </div>
@@ -125,7 +125,7 @@ const AboutPage = () => {
         variants={fadeIn}
       >
         <div className="max-w-4xl mx-auto text-center">
-          <h3 className="text-3xl font-bold mb-6 text-blue-700">Watch Our Journey</h3>
+          <h3 className="text-2xl lg:text-4xl font-bold mb-6 text-green-950">Watch Our Journey</h3>
           <div className="aspect-w-16 aspect-h-9">
             <iframe
               className="w-full h-96 rounded-xl shadow-md"
@@ -141,10 +141,10 @@ const AboutPage = () => {
 
       {/* CTA Button */}
       <motion.section className="py-12 text-center" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn}>
-        <h4 className="text-2xl font-semibold mb-4">Ready to start your adventure?</h4>
+        <h4 className="text-2xl text-green-950 font-semibold mb-4">Ready to start your adventure?</h4>
         <Link
           to="/enquiry"
-          className="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl font-medium hover:bg-blue-700 transition"
+          className="inline-block bg-green-950 text-white px-6 py-3 rounded-xl font-medium hover:bg-green-700 transition"
         >
           Book Your Journey
         </Link>

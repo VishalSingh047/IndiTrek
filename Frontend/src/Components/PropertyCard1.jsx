@@ -26,7 +26,7 @@ export const PropertyCard1 = ({ title }) => {
 
   return (
     <div
-      className="relative items-center w-[280px] h-72 rounded-xl overflow-hidden shadow-lg cursor-pointer transition-transform transform hover:scale-105 "
+      className="relative items-center w-[280px] h-72 rounded-xl overflow-hidden shadow-lg cursor-pointer transition-transform transform hover:scale-103 shadow-green-800"
       // onMouseEnter={() => setHovered(true)}
       // onMouseLeave={() => setHovered(false)}
       onClick={submitHandler}
@@ -38,7 +38,7 @@ export const PropertyCard1 = ({ title }) => {
         className="w-full h-full object-cover"
       />
       <div
-        className={`absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white transition-opacity duration-100 `}
+        className={`absolute inset-0 bg-green-950 bg-opacity-50 flex flex-col justify-center items-center text-white transition-opacity duration-100 `}
       >
         {/* <div
         className={`absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white transition-opacity duration-100 ${

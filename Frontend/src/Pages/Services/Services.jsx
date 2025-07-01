@@ -51,7 +51,7 @@ const Services = () => {
         viewport={{ once: true }}
         variants={fadeIn}
       >
-      <h1 className="text-4xl font-bold mb-8 text-center">Our Tour Packages</h1>
+      <h1 className="text-2xl lg:text-4xl text-green-950 font-bold mb-8 text-center">Our Tour Packages</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {tourPackages.map((pkg, index) => (
           <div key={index} className="bg-white shadow-md rounded-2xl overflow-hidden">
@@ -69,10 +69,10 @@ const Services = () => {
     
     {/* CTA Button */}
       <motion.section className="py-12 text-center" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} >
-        <h4 className="text-2xl font-semibold mb-4">Ready to start your adventure?</h4>
+        <h4 className="text-2xl text-green-950 font-semibold mb-4">Ready to start your adventure?</h4>
         <Link
           to="/enquiry"
-          className="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl font-medium hover:bg-blue-700 transition"
+          className="inline-block bg-green-950 text-white px-6 py-3 rounded-xl font-medium hover:bg-green-700 transition"
         >
           Book Your Journey
         </Link>
